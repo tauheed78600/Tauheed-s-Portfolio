@@ -7,7 +7,7 @@ import ContentProfile from "./components/ContentProfile";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center w-full justify-around min-h-screen bg-cyan-400">
+    <div className="flex flex-col items-center w-full justify-start min-h-screen bg-cyan-400">
       <div className="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4 p-4 justify-end">
         {/* SidebarProfile Section */}
         <div className="sticky top-4 self-start">

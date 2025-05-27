@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from 'react';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Education from './Education';
+import About from './about';
+import Experience from './experience';
+import Projects from './projects';
+import Education from './education';
 import Skills from './Skills';
 import Contact from './Contact';
 
