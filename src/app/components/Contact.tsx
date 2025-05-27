@@ -1,7 +1,7 @@
-export default function Projects() {
+export default function Contact() {
     return (
         <div>
-Projects
+Contact
         </div>
     )
 }

@@ -1,7 +1,7 @@
-export default function Projects() {
+export default function Skills() {
     return (
         <div>
-Projects
+Skills
         </div>
     )
 }
