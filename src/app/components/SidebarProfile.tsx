@@ -8,7 +8,7 @@ import { useState } from 'react';
 export default function SidebarProfile() {
     return (
         <div>
-            <div className="flex flex-col items-center justify-between mb-4 mt-1">
+            <div className="md:sticky flex flex-col items-center justify-between mb-4 mt-1">
                 {/* upper sidebar */}
                 <div className="border-b-[0.5px] border-b-white flex flex-col gap-3 w-full h-[150px]">
                     <div className="flex flex-row gap-4">

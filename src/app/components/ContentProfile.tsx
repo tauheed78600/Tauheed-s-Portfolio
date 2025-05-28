@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from 'react';
-import About from './about';
-import Experience from './experience';
-import Projects from './projects';
-import Education from './education';
+import About from './About';
+import Experience from './Experience';
+import Projects from './Projects';
+import Education from './Education';
 import Skills from './Skills';
 import Contact from './Contact';
 
@@ -14,7 +14,7 @@ export default function ContentProfile() {
     return (
         <div className="">
             <div className="flex flex-row items-center justify-between w-full mb-4">
-                <div className="font-[Quicksand] text-lg ml-10 mt-5">
+                <div className="font-[Quicksand] text-lg ml-10 mt-5 whitespace-nowrap">
                     {tabState === "about" && <p className='text-3xl font-extrabold'>About Me</p>}
                     {tabState === "experience" && <p className='text-3xl font-extrabold'>Experience </p>}
                     {tabState === "projects" && <p className='text-3xl font-extrabold'>Projects </p>}
@@ -22,8 +22,8 @@ export default function ContentProfile() {
                     {tabState === "skills" && <p className='text-3xl font-extrabold'>Skills </p>}
                     {tabState === "contact" && <p className='text-3xl font-extrabold'>Contact </p>}
                 </div>
-                <div className="h-16 w-[70%] rounded-tr-[25px] rounded-bl-[25px] bg-gray-700 flex items-center justify-center shadow-lg">
-                    <div className="text-cyan-200 font-[Quicksand] text-lg font-semibold flex flex-row gap-6">
+                <div className="h-16 w-full md:w-[70%] rounded-tr-[25px] rounded-bl-[25px] bg-gray-700 flex items-center invisible md:visible justify-center shadow-lg transition-all duration-300">
+                    <div className="text-cyan-200 font-[Quicksand] h-20 text-lg font-semibold flex flex-row flex-wrap p-2 gap-4 md:gap-6 w-full justify-center">
                         <button
                             onClick={() => setTabState("about")}
                             className={`cursor-pointer ${tabState === "about" ? "text-yellow-400" : ""}`}>
@@ -65,6 +65,7 @@ export default function ContentProfile() {
                 {tabState === "skills" && <Skills />}
                 {tabState === "contact" && <Contact />}
             </div>
+
         </div>
     );
 }

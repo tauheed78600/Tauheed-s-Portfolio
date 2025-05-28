@@ -12,6 +12,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.z-9999 {
+  z-index: 9999 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
