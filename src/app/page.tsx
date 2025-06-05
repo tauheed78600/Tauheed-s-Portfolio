@@ -22,7 +22,7 @@ export default function Home() {
 
           {/* ContentProfile Section */}
           <div className="w-full md:w-2/3">
-            <div className="w-full h-auto border-[0.5px] border-2 border-black shadow-[0_0_20px_5px_rgba(59,250,246,0.75)] rounded-4xl bg-cyan-600 shadow-2xl">
+            <div className="h-auto border-[0.5px] border-2 border-black shadow-[0_0_20px_5px_rgba(59,250,246,0.75)] rounded-4xl bg-cyan-600 shadow-2xl">
               <ContentProfile />
             </div>
           </div>

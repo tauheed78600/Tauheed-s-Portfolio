@@ -1,6 +1,6 @@
 import { FaJava, FaPython, FaJs, FaCuttlefish } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
-import { FaGlobeAmericas, FaLanguage } from "react-icons/fa";
+import { FaGlobeAmericas } from "react-icons/fa";
 
 export default function Languages() {
     return (
@@ -8,7 +8,6 @@ export default function Languages() {
             <h2 className="flex justify-center items-center text-3xl font-extrabold font-[Quicksand] mt-4 mb-4">Languages</h2>
             <div className="w-full border-none h-auto bg-gradient-to-b from-cyan-900/90 to-cyan-700/40 rounded-2xl shadow-xl p-6">
                 <div className="grid grid-cols-1 gap-4">
-                    {/* Coding Languages */}
                     <div className="flex font-[Quicksand] flex-col gap-4 bg-cyan-800/40 rounded-xl p-6 shadow-md hover:shadow-cyan-400/30 transition-shadow duration-300">
                         <div className="flex items-center gap-2 mb-2">
                             <FaGlobeAmericas className="text-cyan-300 text-2xl animate-spin-slow" />
@@ -67,32 +66,8 @@ export default function Languages() {
                             </li>
                         </ul>
                     </div>
-                    {/* Human Languages */}
-                    {/* <div className="flex flex-col gap-4 bg-cyan-800/40 rounded-xl p-6 shadow-md hover:shadow-cyan-400/30 transition-shadow duration-300">
-                        <div className="flex items-center gap-2 mb-2">
-                            <FaLanguage className="text-cyan-300 text-2xl animate-spin-slow" />
-                            <h2 className="text-xl font-bold text-cyan-200 font-[Quicksand]">Human Languages</h2>
-                        </div>
-                        <ul className="flex flex-col gap-3 mt-2">
-                            <li className="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
-                                <span className="text-white font-semibold group-hover:text-yellow-300 transition-colors duration-300">English</span>
-                            </li>
-                            <li className="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
-                                <span className="text-white font-semibold group-hover:text-green-300 transition-colors duration-300">Hindi</span>
-                            </li>
-                            <li className="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
-                                <span className="text-white font-semibold group-hover:text-pink-300 transition-colors duration-300">Urdu</span>
-                            </li>
-                            <li className="flex items-center gap-3 group transition-all duration-300 hover:scale-105">
-                                <span className="text-white font-semibold group-hover:text-blue-300 transition-colors duration-300">Arabic</span>
-                            </li>
-                        </ul>
-                    </div> */}
                 </div>
             </div>
         </div>
     );
 }
-
-// Add this to your CSS for slow spin animation if not already present:
-// .animate-spin-slow { animation: spin 2.5s linear infinite; }

@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import About from './AboutSections/About';
-import Experience from './experience';
-import Projects from './projects';
-import Education from './education';
+import Experience from './Experience';
+import Projects from './Projects';
+import Education from './Education';
 import Skills from './Skills';
 import Contact from './Contact';
 
@@ -12,7 +12,7 @@ export default function ContentProfile() {
     const [tabState, setTabState] = useState("about");
 
     return (
-        <div className="">
+        <div className="text-white">
             <div className="flex flex-row items-center justify-between w-full">
                 <div className="font-[Quicksand] text-lg ml-10 whitespace-nowrap">
                     {tabState === "about" && <p className='text-3xl font-extrabold'>About Me</p>}
