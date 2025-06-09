@@ -5,6 +5,7 @@ import AboutMeText from './AboutMeText';
 import PrimaryFocus from './PrimaryFocus';
 import Languages from './Languages';
 import DevelopmentSkills from './DevelopmentSkills';
+import Strengths from '../Strengths';
 
 
 export default function About() {
@@ -21,6 +22,9 @@ export default function About() {
             </div>
             <div>
                 <DevelopmentSkills/>
+            </div>
+            <div>
+                <Strengths/>
             </div>
         </div>
     )

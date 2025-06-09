@@ -5,7 +5,6 @@ import About from './AboutSections/About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Education from './Education';
-import Skills from './Skills';
 import Contact from './Contact';
 
 export default function ContentProfile() {
