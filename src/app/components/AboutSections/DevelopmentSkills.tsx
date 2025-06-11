@@ -89,7 +89,7 @@ export default function DevelopmentSkills() {
                     <button
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
-                        className={`px-4 py-2 rounded-full font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-cyan-700 text-white border-cyan-400 shadow-lg' : 'bg-white/80 text-cyan-900 border-cyan-200 hover:bg-cyan-100'}`}
+                        className={`px-4 py-2 rounded-full font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-cyan-700 text-yellow-500 border-cyan-400 shadow-lg' : 'bg-white/80 text-cyan-900 border-cyan-200 hover:bg-cyan-100'}`}
                     >
                         {tab.label}
                     </button>

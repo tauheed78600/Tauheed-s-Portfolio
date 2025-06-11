@@ -36,7 +36,7 @@ export default function SidebarProfile() {
                         <a href="https://www.linkedin.com/in/tauheed-darekar/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-400 transition text-2xl">
                             <FaLinkedin />
                         </a>
-                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-400 transition text-2xl">
+                        <a href="https://twitter.com/tauheed" target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-400 transition text-2xl">
                             <FaTwitter />
                         </a>
                     </div>
@@ -46,7 +46,7 @@ export default function SidebarProfile() {
                     </div>
                     <div className="w-full bg-cyan-800/30 rounded-lg p-3 flex flex-col items-center mt-2">
                         <span className="font-[Open_Sans] text-cyan-100 text-sm mb-1">Email</span>
-                        <a href="mailto:tauheeddarekar786@gmail.com" className="font-[Quicksand] text-white font-medium hover:underline">tauheeddarekar786@gmail.com</a>
+                        <a href="mailto:tauheeddarekar786@gmail.com" className="font-[Quicksand] text-white font-medium hover:underline sm:text-sm">tauheeddarekar786@gmail.com</a>
                     </div>
                 </div>
             </div>
