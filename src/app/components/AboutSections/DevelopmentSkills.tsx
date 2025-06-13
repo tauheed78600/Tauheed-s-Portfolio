@@ -84,12 +84,12 @@ export default function DevelopmentSkills() {
     return (
         <div className="flex w-full flex-col items-center justify-center py-10">
             <h2 className="text-3xl font-extrabold font-[Quicksand] text-center text-white mb-8">Development Skills</h2>
-            <div className="flex gap-2  sm:gap-4 mb-8 flex-wrap justify-center">
+            <div className="flex gap-2  sm:gap-4 mb-8  flex-wrap justify-center">
                 {skillTabs.map(tab => (
                     <button
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
-                        className={`px-4 py-2 rounded-full font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-cyan-700 text-yellow-500 border-cyan-400 shadow-lg' : 'bg-white/80 text-cyan-900 border-cyan-200 hover:bg-cyan-100'}`}
+                        className={`px-4 py-2 rounded-full bg-gradient-to-tr from-black to-violet-700 text-white cursor-pointer font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-violet-700 text-violet-500 border-violet-400 shadow-lg' : 'bg-violet-700 text-violet-900 border-cyan-200 hover:bg-cyan-100'}`}
                     >
                         {tab.label}
                     </button>
@@ -99,7 +99,7 @@ export default function DevelopmentSkills() {
                 {currentSkills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex flex-col items-center bg-gradient-to-b from-cyan-900/90 to-cyan-700/40 justify-center p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+                        className="flex flex-col items-center bg-gradient-to-bl from-black to-violet-700  justify-center p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
                     >
                         <div className="mb-2">{skill.icon}</div>
                         <p className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center text-white">{skill.name}</p>

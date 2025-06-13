@@ -2,9 +2,9 @@
 
 import React, { useState } from 'react';
 import About from './AboutSections/About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Education from './Education';
+import Experience from './experience';
+import Projects from './ProjectsComponents/projects';
+import Education from './education';
 import Contact from './Contact';
 
 export default function ContentProfile() {
@@ -12,45 +12,85 @@ export default function ContentProfile() {
   const pageNumber = 1;
   const [page, setPage] = useState(pageNumber);
 
-  const handleTabClick = (tab: string, pageno:number) => {
+  const handleTabClick = (tab: string, pageno: number) => {
     setTabState(tab);
     setPage(pageno);
   }
 
+  const tabOrder = [
+    { tab: "about", page: 1 },
+    { tab: "experience", page: 2 },
+    { tab: "projects", page: 3 },
+    { tab: "education", page: 4 },
+    { tab: "contact", page: 5 },
+  ];
+
+  const handleNext = () => {
+    const currentIndex = tabOrder.findIndex(t => t.tab === tabState && t.page === page);
+    const nextIndex = (currentIndex + 1) % tabOrder.length;
+    setTabState(tabOrder[nextIndex].tab);
+    setPage(tabOrder[nextIndex].page);
+  };
+
   return (
     <div className="text-white">
-      <div className="flex flex-row items-center justify-between h-auto">
-        <div className="font-[Quicksand] text-lg ml-10 whitespace-nowrap">
-          {tabState === "about" && page === 1 && <p className='text-3xl font-extrabold'>About Me</p>}
-          {tabState === "experience" && page === 2 && <p className='text-3xl font-extrabold'>Experience </p>}
-          {tabState === "projects" && page === 3 && <p className='text-3xl font-extrabold'>Projects </p>}
-          {tabState === "education" && page === 4 && <p className='text-3xl font-extrabold'>Education </p>}
-          {tabState === "contact" && page === 5 && <p className='text-3xl font-extrabold'>Contact </p>}
+      <div className="flex flex-row items-center justify-between h-20 md:h-auto">
+        <div className="font-[Quicksand] text-lg ml-10 whitespace-nowrap ">
+          {tabState === "about" && page === 1 && (
+            <div className="flex flex-col items-start">
+              <span className='text-3xl font-extrabold'>About Me</span>
+              <span className="block w-16 h-1 mt-2 bg-yellow-500 rounded-full" />
+            </div>
+          )}
+          {tabState === "experience" && page === 2 && (
+            <div className="flex flex-col items-start">
+              <span className='text-3xl font-extrabold'>Experience</span>
+              <span className="block w-16 h-1 mt-2 bg-yellow-500 rounded-full" />
+            </div>
+          )}
+          {tabState === "projects" && page === 3 && (
+            <div className="flex flex-col items-start">
+              <span className='text-3xl font-extrabold'>Projects</span>
+              <span className="block w-16 h-1 mt-2 bg-yellow-500 rounded-full" />
+            </div>
+          )}
+          {tabState === "education" && page === 4 && (
+            <div className="flex flex-col items-start">
+              <span className='text-3xl font-extrabold'>Education</span>
+              <span className="block w-16 h-1 mt-2 bg-yellow-500 rounded-full" />
+            </div>
+          )}
+          {tabState === "contact" && page === 5 && (
+            <div className="flex flex-col items-start">
+              <span className='text-3xl font-extrabold'>Contact</span>
+              <span className="block w-16 h-1 mt-2 bg-yellow-500 rounded-full" />
+            </div>
+          )}
         </div>
-        <div className="w-full md:w-[70%] rounded-tr-[25px] rounded-bl-[25px] bg-gray-700 flex items-center invisible md:visible justify-center shadow-lg transition-all duration-300">
+        <div className="w-full md:w-[70%] rounded-tr-[25px] rounded-bl-[25px] bg-gradient-to-tr from-black to-violet-700 border-black flex items-center invisible md:visible justify-center shadow-lg transition-all duration-300">
           <div className="text-cyan-200 font-[Quicksand] text-lg font-semibold flex flex-row flex-wrap p-4 gap-4 md:gap-6  w-full justify-center">
             <button
-              onClick={()=>handleTabClick("about", 1)}
+              onClick={() => handleTabClick("about", 1)}
               className={`cursor-pointer ${tabState === "about" ? "text-yellow-400" : ""}`}>
               About
             </button>
             <button
-              onClick={()=>handleTabClick("experience", 2)}
+              onClick={() => handleTabClick("experience", 2)}
               className={`cursor-pointer ${tabState === "experience" ? "text-yellow-400" : ""}`}>
               Experience
             </button>
             <button
-              onClick={()=>handleTabClick("projects", 3)}
+              onClick={() => handleTabClick("projects", 3)}
               className={`cursor-pointer ${tabState === "projects" ? "text-yellow-400" : ""}`}>
               Projects
             </button>
             <button
-              onClick={()=>handleTabClick("education", 4)}
+              onClick={() => handleTabClick("education", 4)}
               className={`cursor-pointer ${tabState === "education" ? "text-yellow-400" : ""}`}>
               Education
             </button>
             <button
-              onClick={()=>handleTabClick("contact", 5)}
+              onClick={() => handleTabClick("contact", 5)}
               className={`cursor-pointer ${tabState === "contact" ? "text-yellow-400" : ""}`}>
               Contact
             </button>
@@ -68,27 +108,27 @@ export default function ContentProfile() {
         <div className="w-full md:w-[70%] rounded-tr-[25px] rounded-bl-[25px]  flex items-center justify-center shadow-lg transition-all duration-300">
           <div className="text-cyan-200 font-[Quicksand] text-lg font-semibold flex flex-row flex-wrap p-4 gap-4 md:gap-6  w-full justify-center">
             <button
-              onClick={()=>handleTabClick("about", 1)}
+              onClick={() => handleTabClick("about", 1)}
               className={`cursor-pointer ${tabState === "about" ? "text-yellow-400" : ""}`}>
               About
             </button>
             <button
-              onClick={()=>handleTabClick("experience", 2)}
+              onClick={() => handleTabClick("experience", 2)}
               className={`cursor-pointer ${tabState === "experience" ? "text-yellow-400" : ""}`}>
               Experience
             </button>
             <button
-              onClick={()=>handleTabClick("projects", 3)}
+              onClick={() => handleTabClick("projects", 3)}
               className={`cursor-pointer ${tabState === "projects" ? "text-yellow-400" : ""}`}>
               Projects
             </button>
             <button
-              onClick={()=>handleTabClick("education", 4)}
+              onClick={() => handleTabClick("education", 4)}
               className={`cursor-pointer ${tabState === "education" ? "text-yellow-400" : ""}`}>
               Education
             </button>
             <button
-              onClick={()=>handleTabClick("contact", 5)}
+              onClick={() => handleTabClick("contact", 5)}
               className={`cursor-pointer ${tabState === "contact" ? "text-yellow-400" : ""}`}>
               Contact
             </button>
@@ -99,7 +139,7 @@ export default function ContentProfile() {
         {/* This div is to ensure the footer is always at the bottom of the page */}
         <div className="h-24">
           <div className='flex justify-end p-4'>
-            <button className='bg-cyan-800 w-20 p-2 h-12 cursor-pointer rounded-lg font-semibold'>Next &gt;</button>
+            <button className='bg-cyan-800 w-20 p-2 h-12 cursor-pointer rounded-lg font-semibold' onClick={handleNext}>Next &gt;</button>
           </div>
         </div>
       </div>
