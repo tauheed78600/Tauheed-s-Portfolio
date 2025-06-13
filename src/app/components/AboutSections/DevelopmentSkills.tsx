@@ -99,7 +99,7 @@ export default function DevelopmentSkills() {
                 {currentSkills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex flex-col items-center bg-gradient-to-b from-cyan-200/60 to-cyan-500/40 justify-center p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
+                        className="flex flex-col items-center bg-gradient-to-b from-cyan-900/90 to-cyan-700/40 justify-center p-4 rounded-lg shadow-md transition-transform duration-300 hover:scale-110"
                     >
                         <div className="mb-2">{skill.icon}</div>
                         <p className="text-sm font-medium text-gray-700 dark:text-gray-300 text-center text-white">{skill.name}</p>

@@ -19,7 +19,7 @@ export default function ContentProfile() {
 
   return (
     <div className="text-white">
-      <div className="flex flex-row items-center justify-between w-full ">
+      <div className="flex flex-row items-center justify-between h-auto">
         <div className="font-[Quicksand] text-lg ml-10 whitespace-nowrap">
           {tabState === "about" && page === 1 && <p className='text-3xl font-extrabold'>About Me</p>}
           {tabState === "experience" && page === 2 && <p className='text-3xl font-extrabold'>Experience </p>}
@@ -64,7 +64,7 @@ export default function ContentProfile() {
         {tabState === "education" && page === 4 && <Education />}
         {tabState === "contact" && page === 5 && <Contact />}
       </div>
-      <div className="fixed bottom-0 backdrop-blur left-0 w-full border-black border-[0.5px] rounded-tr-[25px] rounded-tl-[25px] p-4 text-center bg-gradient-to-b from-cyan-900/60 to-cyan-700/40 block md:hidden">
+      <div className="fixed bottom-0 backdrop-blur left-0 w-full border-black border-[0.5px] rounded-tr-[25px] rounded-tl-[25px] p-4 text-center bg-gradient-to-b from-cyan-900/60 to-cyan-700/40 z-50 block md:hidden">
         <div className="w-full md:w-[70%] rounded-tr-[25px] rounded-bl-[25px]  flex items-center justify-center shadow-lg transition-all duration-300">
           <div className="text-cyan-200 font-[Quicksand] text-lg font-semibold flex flex-row flex-wrap p-4 gap-4 md:gap-6  w-full justify-center">
             <button
