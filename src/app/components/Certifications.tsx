@@ -1,6 +1,33 @@
-import { FaCertificate } from "react-icons/fa";
 import Image from "next/image";
 import React from 'react';
+
+function LazyCertificateImage({ src, alt }: { src: string; alt: string }) {
+  const [imgLoaded, setImgLoaded] = React.useState(false);
+  const [imgError, setImgError] = React.useState(false);
+  return (
+    <div className="relative w-[500px] h-[300px] flex items-center justify-center bg-gradient-to-tr from-violet-900 to-black">
+      {(!imgLoaded || imgError) && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-gradient-to-tr from-violet-900 to-black animate-pulse">
+          <svg className="w-12 h-12 text-violet-400 mb-2 animate-spin" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+          </svg>
+          <span className="text-violet-200 font-semibold text-sm">Loading image...</span>
+        </div>
+      )}
+      <Image
+        src={src}
+        alt={alt}
+        width={500}
+        height={300}
+        className={`object-contain transition duration-500 ease-in-out ${imgLoaded && !imgError ? '' : 'invisible'}`}
+        loading="lazy"
+        onLoad={() => setImgLoaded(true)}
+        onError={() => setImgError(true)}
+      />
+    </div>
+  );
+}
 
 function Certifications() {
   return (
@@ -18,7 +45,7 @@ function Certifications() {
           <div className="flex-1 flex flex-col items-center justify-center">
             <i className="font-[Quicksand] font-extrabold text-xl text-center mb-4">Microsoft Certified: Azure Developer Associate</i>
             <div className="border-8 border-black rounded-xl overflow-hidden shadow-2xl bg-white">
-              <Image src="/AZ204.png" alt="Azure Developer Associate Certificate" width={500} height={300} className="object-contain" />
+              <LazyCertificateImage src="/AZ204.png" alt="Azure Developer Associate Certificate" />
             </div>
           </div>
         </div>
@@ -32,7 +59,7 @@ function Certifications() {
           <div className="flex-1 flex flex-col items-center justify-center">
             <i className="font-[Quicksand] font-extrabold text-xl text-center mb-4">Frontend Developer (React) - HackerRank</i>
             <div className="border-8 border-black rounded-xl overflow-hidden shadow-2xl bg-white">
-              <Image src="/Frontend.png" alt="Frontend Developer Certificate" width={500} height={300} className="object-contain" />
+              <LazyCertificateImage src="/Frontend.png" alt="Frontend Developer Certificate" />
             </div>
           </div>
         </div>
@@ -46,7 +73,7 @@ function Certifications() {
           <div className="flex-1 flex flex-col items-center justify-center">
             <i className="font-[Quicksand] font-extrabold text-xl text-center mb-4">Microsoft Certified: Azure Fundamentals</i>
             <div className="border-8 border-black rounded-xl overflow-hidden shadow-2xl bg-white">
-              <Image src="/AZ900.png" alt="Azure Fundamentals Certificate" width={500} height={300} className="object-contain" />
+              <LazyCertificateImage src="/AZ900.png" alt="Azure Fundamentals Certificate" />
             </div>
           </div>
         </div>
@@ -60,7 +87,7 @@ function Certifications() {
           <div className="flex-1 flex flex-col items-center justify-center">
             <i className="font-[Quicksand] font-extrabold text-xl text-center mb-4">Artificial Intelligence A-Z 2024</i>
             <div className="border-8 border-black rounded-xl overflow-hidden shadow-2xl bg-white">
-              <Image src="/AI2024.jpeg" alt="Artificial Intelligence A-Z 2024 Certificate" width={500} height={300} className="object-contain" />
+              <LazyCertificateImage src="/AI2024.jpeg" alt="Artificial Intelligence A-Z 2024 Certificate" />
             </div>
           </div>
         </div>

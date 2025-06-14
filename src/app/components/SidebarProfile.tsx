@@ -2,6 +2,7 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import React from 'react';
 import { DownloadIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function SidebarProfile() {
     return (
@@ -11,7 +12,7 @@ export default function SidebarProfile() {
                 <div className="border-b-[0.5px] border-b-white flex flex-col gap-3 w-full h-auto">
                     <div className="grid grid-cols-[40%_60%] md:gap-4">
                         <div className="border-[0.5px] border-white md:w-20 md:h-20 w-16 h-16 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex items-center justify-center shadow-lg">
-                            <img src="/TauheedPhoto.jpg" alt="Avatar" className="rounded-full w-full h-full object-cover" />
+                            <Image src="/TauheedPhoto.jpg" alt="Tauheed's Avatar" className="rounded-full w-full h-full object-cover" width={80} height={80} />
                         </div>
                         <div>
                             <h2 className="font-[Quicksand] font-bold text-xl">Tauheed</h2>

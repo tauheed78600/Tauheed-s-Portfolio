@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PrimaryFocus() {
     return (
         <div>
@@ -7,7 +9,7 @@ export default function PrimaryFocus() {
             <div className="grid grid-cols-1 font-[Quicksand] md:grid-cols-2 gap-4 p-4">
                 <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
-                        <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-dev.svg" />
+                        <Image className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-dev.svg" alt="Web Design & Development Icon" width={48} height={48} />
                     </div>
                     <div>
                         <h2 className="text-xl font-bold mb-2">Web Design & Development</h2>
@@ -18,7 +20,7 @@ export default function PrimaryFocus() {
                 </div>
                 <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
-                        <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-frameworks.svg" alt="Code Icon" />
+                        <Image className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-frameworks.svg" alt="Full-Stack Solutions Icon" width={48} height={48} />
                     </div>
                     <div>
                         <h2 className="text-xl font-bold mb-2">Full-Stack Solutions</h2>
@@ -31,7 +33,7 @@ export default function PrimaryFocus() {
             <div className="grid grid-cols-1 font-[Quicksand] md:grid-cols-2 gap-4 p-4">
                 <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
-                        <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-app.svg" alt="Mobile Icon" />
+                        <Image className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-app.svg" alt="Mobile Apps Icon" width={48} height={48} />
                     </div>
                     <div>
                         <h2 className="text-xl font-bold mb-2">Mobile Apps</h2>
@@ -42,7 +44,7 @@ export default function PrimaryFocus() {
                 </div>
                 <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
-                        <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="cloudImage.png" alt="Cloud Icon" />
+                        <Image className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="/cloudImage.png" alt="Deployments Icon" width={48} height={48} />
                     </div>
                     <div>
                         <h2 className="text-xl font-bold mb-2">Deployments</h2>
