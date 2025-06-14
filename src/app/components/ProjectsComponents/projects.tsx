@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ProjectCard from './ProjectCard';
 
 export default function Projects() {
-
-    const [projects, setProjects] = useState([])
 
     const projectsData = [
         {

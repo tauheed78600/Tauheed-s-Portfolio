@@ -1,9 +1,6 @@
 "use client"
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
-
 import React from 'react';
-import { useState } from 'react';
 import { DownloadIcon } from "lucide-react";
 
 export default function SidebarProfile() {

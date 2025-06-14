@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import SidebarProfile from "./components/SidebarProfile";
 import ContentProfile from "./components/ContentProfile";
 
 export default function Home() {
-  const [tabState, setTabState] = useState("about");
-
   return (
     <div>
       <div className="flex flex-col items-center w-full justify-start min-h-screen bg-gradient-to-b from-black to-violet-700 pb-24">

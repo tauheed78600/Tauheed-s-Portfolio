@@ -33,7 +33,7 @@ export default function Education() {
                     <div className="w-full md:w-1/2 md:pl-8 flex justify-end md:justify-start">
                         <div className="bg-gradient-to-tr from-black to-violet-700 border-none rounded-2xl shadow-xl p-4 sm:p-6 w-full max-w-md hover:scale-[1.04] hover:shadow-violet-300 transition-all duration-300 z-10 animate-fade-in-up delay-200">
                             <h3 className="text-xl sm:text-2xl font-bold text-white font-[Quicksand]">B.E. Computer Science</h3>
-                            <p className="text-violet-200 font-semibold mt-1">KJEI's Trinity Academy of Engineering, Pune</p>
+                            <p className="text-cyan-200 font-semibold mt-1">KJEI&rsquo;s Trinity Academy of Engineering, Pune</p>
                             <span className="inline-block text-xs text-violet-200 font-bold mt-2 bg-violet-800 px-3 py-1 rounded-full shadow">08/2018 – 06/2022</span>
                             <div className="mt-3 flex items-center gap-2">
                                 <span className="text-gray-300 text-sm font-semibold">CGPA:</span>

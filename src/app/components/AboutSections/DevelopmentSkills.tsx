@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { SiMongodb, SiMysql, SiNestjs, SiNodedotjs, SiReact, SiSpring, SiDocker, SiGit, SiPython, SiJavascript, SiHtml5 } from 'react-icons/si';
+import { SiMongodb, SiMysql, SiNestjs, SiNodedotjs, SiReact, SiSpring, SiGit, SiHtml5 } from 'react-icons/si';
 
 export default function DevelopmentSkills() {
     const [activeTab, setActiveTab] = React.useState('frontend');
