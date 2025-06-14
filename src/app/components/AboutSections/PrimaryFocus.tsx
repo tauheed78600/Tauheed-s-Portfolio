@@ -5,7 +5,7 @@ export default function PrimaryFocus() {
                 <h2>Primary Focus</h2>
             </div>
             <div className="grid grid-cols-1 font-[Quicksand] md:grid-cols-2 gap-4 p-4">
-                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-cyan-400">
+                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
                         <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-dev.svg" />
                     </div>
@@ -16,7 +16,7 @@ export default function PrimaryFocus() {
                         </p>
                     </div>
                 </div>
-                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-cyan-400">
+                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
                         <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-frameworks.svg" alt="Code Icon" />
                     </div>
@@ -29,7 +29,7 @@ export default function PrimaryFocus() {
                 </div>
             </div>
             <div className="grid grid-cols-1 font-[Quicksand] md:grid-cols-2 gap-4 p-4">
-                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-cyan-400">
+                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
                         <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="icon-app.svg" alt="Mobile Icon" />
                     </div>
@@ -40,7 +40,7 @@ export default function PrimaryFocus() {
                         </p>
                     </div>
                 </div>
-                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-cyan-400">
+                <div className="border-none group grid grid-cols-[20%_80%] rounded-2xl p-4 bg-gradient-to-tr from-black to-violet-700 shadow-md transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-violet-400">
                     <div>
                         <img className="h-12 w-12 transition-transform duration-300 group-hover:scale-110" src="cloudImage.png" alt="Cloud Icon" />
                     </div>

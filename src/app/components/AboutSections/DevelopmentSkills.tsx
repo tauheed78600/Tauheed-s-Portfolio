@@ -13,7 +13,7 @@ export default function DevelopmentSkills() {
                 { name: "CSS", icon: <span className="text-4xl font-bold text-blue-400">CSS</span> },
                 { name: "ReactJS", icon: <SiReact size={40} color="#61DAFB" /> },
                 { name: "BootStrap", icon: <span className="text-2xl font-bold text-purple-700">B</span> },
-                { name: "Tailwind CSS", icon: <span className="text-2xl font-bold text-cyan-400">T</span> },
+                { name: "Tailwind CSS", icon: <span className="text-2xl font-bold text-violet-400">T</span> },
                 { name: "Schadcn UI", icon: <span className="text-2xl font-bold text-gray-400">S</span> },
             ],
         },
@@ -37,7 +37,7 @@ export default function DevelopmentSkills() {
                 { name: "MySQL", icon: <SiMysql size={40} color="#00758F" /> },
                 { name: "MongoDB", icon: <SiMongodb size={40} color="#47A248" /> },
                 { name: "PostgreSQL", icon: <span className="text-2xl font-bold text-blue-700">PG</span> },
-                { name: "ElasticSearch", icon: <span className="text-2xl font-bold text-yellow-600">ES</span> },
+                { name: "ElasticSearch", icon: <span className="text-2xl font-bold text-violet-600">ES</span> },
             ],
         },
         {
@@ -47,7 +47,7 @@ export default function DevelopmentSkills() {
                 { name: "Azure Services", icon: <span className="text-2xl font-bold text-blue-500">AZ</span> },
                 { name: "CI/CD Pipelines", icon: <span className="text-2xl font-bold text-green-500">CI/CD</span> },
                 { name: "Jenkins", icon: <span className="text-2xl font-bold text-gray-700">J</span> },
-                { name: "Infrastructure-as-Code (Azure Bicep)", icon: <span className="text-2xl font-bold text-cyan-700">IaC</span> },
+                { name: "Infrastructure-as-Code (Azure Bicep)", icon: <span className="text-2xl font-bold text-violet-700">IaC</span> },
             ],
         },
         {
@@ -89,7 +89,7 @@ export default function DevelopmentSkills() {
                     <button
                         key={tab.key}
                         onClick={() => setActiveTab(tab.key)}
-                        className={`px-4 py-2 rounded-full bg-gradient-to-tr from-black to-violet-700 text-white cursor-pointer font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-violet-700 text-violet-500 border-violet-400 shadow-lg' : 'bg-violet-700 text-violet-900 border-cyan-200 hover:bg-cyan-100'}`}
+                        className={`px-4 py-2 rounded-full bg-gradient-to-tr from-black to-violet-700 text-white cursor-pointer font-semibold transition-all duration-200 border-2 focus:outline-none text-sm sm:text-base ${activeTab === tab.key ? 'bg-violet-700 text-violet-500 border-violet-400 shadow-lg' : 'bg-violet-700 text-violet-900 border-violet-200 hover:bg-violet-100'}`}
                     >
                         {tab.label}
                     </button>

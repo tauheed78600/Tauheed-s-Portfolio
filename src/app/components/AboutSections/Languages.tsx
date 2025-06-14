@@ -10,13 +10,13 @@ export default function Languages() {
                 <div className="grid grid-cols-1 gap-4">
                     <div className="flex font-[Quicksand] flex-col gap-4 bg-gradient-to-tr from-black to-violet-700 rounded-xl p-6 transition-shadow duration-300">
                         <div className="flex items-center gap-2 mb-2">
-                            <FaGlobeAmericas className="text-cyan-300 text-2xl animate-spin-slow" />
-                            <h2 className="text-xl font-bold text-cyan-200 font-[Quicksand]">Coding Languages</h2>
+                            <FaGlobeAmericas className="text-violet-300 text-2xl animate-spin-slow" />
+                            <h2 className="text-xl font-bold text-violet-200 font-[Quicksand]">Coding Languages</h2>
                         </div>
                         <ul className="flex flex-col gap-5 mt-2">
                             <li className="flex flex-col gap-1 group transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center gap-3">
-                                    <FaJs className="text-yellow-400 text-xl group-hover:animate-bounce" />
+                                    <FaJs className="text-violet-400 text-xl group-hover:animate-bounce" />
                                     <span className="text-white font-semibold">JavaScript</span>
                                 </div>
                                 <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
@@ -36,7 +36,7 @@ export default function Languages() {
                             </li>
                             <li className="flex flex-col gap-1 group transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center gap-3">
-                                    <FaPython className="text-yellow-300 text-xl group-hover:animate-bounce" />
+                                    <FaPython className="text-violet-300 text-xl group-hover:animate-bounce" />
                                     <span className="text-white font-semibold">Python</span>
                                 </div>
                                 <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">

@@ -16,11 +16,11 @@ export default function AboutMeText() {
 
             {/* Show More Button */}
             {!showMore && (
-                <div className='flex flex-row justify-center text-cyan-200 font-bold items-center gap-2 mt-4'>
+                <div className='flex flex-row justify-center text-violet-200 font-bold items-center gap-2 mt-4'>
                     <FaArrowDown className='mt-3 animate-bounce' />
                     <button
                         onClick={() => setShowMore(true)}
-                        className='text-cyan-200 cursor-pointer'
+                        className='text-violet-200 cursor-pointer'
                     >
                         Show More
                     </button>
@@ -47,11 +47,11 @@ export default function AboutMeText() {
                         I’m passionate about building impactful applications and constantly strive to improve my problem-solving and development skills. I'm always open to opportunities that challenge me and help me grow as a Fullstack developer.
                     </p>
                     {/* Show Less Button */}
-                    <div className='flex flex-row justify-center text-cyan-200 font-bold items-center gap-2 mt-4'>
+                    <div className='flex flex-row justify-center text-violet-200 font-bold items-center gap-2 mt-4'>
                         <FaArrowUp className='mt-3 animate-bounce' />
                         <button
                             onClick={() => setShowMore(false)}
-                            className='text-cyan-200 cursor-pointer'
+                            className='text-violet-200 cursor-pointer'
                         >
                             Show Less
                         </button>
