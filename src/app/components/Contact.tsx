@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className="flex flex-col items-center mt-8 gap-2 animate-fade-in-up delay-200">
                     <span className="text-violet-200 font-semibold">Or reach out directly:</span>
                     <div className="flex gap-4 mt-2">
-                        <a href="mailto:tauheed78600@gmail.com" className="hover:scale-110 transition-transform duration-200" title="Email">
+                        <a href="mailto:tauheeddarekar786@gmail.com" className="hover:scale-110 transition-transform duration-200" title="Email">
                             <svg className="w-7 h-7 text-violet-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M16 12H8m8 0V8m0 4v4m0-4H8m8 0H8" /></svg>
                         </a>
                         <a href="https://www.linkedin.com/in/tauheed-darekar/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200" title="LinkedIn">

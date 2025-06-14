@@ -10,18 +10,19 @@ export default function SidebarProfile() {
             <div className="flex flex-col items-center justify-between mb-4 mt-1">
                 {/* upper sidebar */}
                 <div className="border-b-[0.5px] border-b-white flex flex-col gap-3 w-full h-auto">
-                    <div className="grid grid-cols-[40%_60%] md:gap-4">
-                        <div className="border-[0.5px] border-white md:w-20 md:h-20 w-16 h-16 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex items-center justify-center shadow-lg">
+                    <div className="grid grid-cols-[40%_60%]">
+                        <div className="border-[0.5px] border-white md:w-20 md:h-20 w-20 h-20 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex items-center justify-center shadow-lg">
                             <Image src="/TauheedPhoto.jpg" alt="Tauheed's Avatar" className="rounded-full w-full h-full object-cover" width={80} height={80} />
                         </div>
                         <div>
-                            <h2 className="font-[Quicksand] font-bold text-xl">Tauheed</h2>
+                            <h2 className="font-[Quicksand] font-bold text-xl whitespace-nowrap">Tauheed Darekar</h2>
                             <strong className="font-[Quicksand] w-full text-sm">Fullstack Developer</strong>
+                            <h2 className="font-[Quicksand] font-extrabold text-2xl">السلام علیکم</h2>
                         </div>
                     </div>
                   
                     <div className="flex justify-center">
-                        <a href="/Tauheed_Resume.pdf" download className="bg-gradient-to-tr from-black to-violet-700 whitespace-nowrap cursor-pointer mb-3 w-auto h-auto p-3 font-[Open_Sans] text-white rounded-full transition duration-300 hover:bg-violet-800 flex items-center justify-center">
+                        <a href="/Tauheed_Resume.pdf" download className="bg-gradient-to-tr from-black to-violet-700 whitespace-nowrap cursor-pointer mb-3 w-full h-auto p-2 font-[Open_Sans] text-white rounded-full transition duration-300 hover:bg-violet-800 flex items-center justify-center">
                             Download Resume <DownloadIcon className="inline ml-2 h-5 animate-bounce mt-2" />
                         </a>
                     </div>
