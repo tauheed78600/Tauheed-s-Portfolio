@@ -11,7 +11,7 @@ export default function SidebarProfile() {
                 <div className="border-b-[0.5px] border-b-white flex flex-col gap-3 w-full h-auto">
                     <div className="grid grid-cols-[40%_60%] md:gap-4">
                         <div className="border-[0.5px] border-white md:w-20 md:h-20 w-16 h-16 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex items-center justify-center shadow-lg">
-                            <img src="Tauheed_image.jpg" alt="Avatar" className="rounded-full w-full h-full object-cover" />
+                            <img src="/TauheedPhoto.jpg" alt="Avatar" className="rounded-full w-full h-full object-cover" />
                         </div>
                         <div>
                             <h2 className="font-[Quicksand] font-bold text-xl">Tauheed</h2>
@@ -20,8 +20,8 @@ export default function SidebarProfile() {
                     </div>
                   
                     <div className="flex justify-center">
-                        <a href="/Tauheed_Resume.pdf" download className="bg-gradient-to-tr from-black to-violet-700 cursor-pointer mb-3 w-[90%] h-8 font-[Open_Sans] text-white rounded-full transition duration-300 hover:bg-violet-800 flex items-center justify-center">
-                            Download Resume <DownloadIcon className="inline ml-2 h-4 animate-bounce" />
+                        <a href="/Tauheed_Resume.pdf" download className="bg-gradient-to-tr from-black to-violet-700 whitespace-nowrap cursor-pointer mb-3 w-auto h-auto p-3 font-[Open_Sans] text-white rounded-full transition duration-300 hover:bg-violet-800 flex items-center justify-center">
+                            Download Resume <DownloadIcon className="inline ml-2 h-5 animate-bounce mt-2" />
                         </a>
                     </div>
                 </div>

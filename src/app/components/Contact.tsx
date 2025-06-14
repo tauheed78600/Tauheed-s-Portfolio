@@ -42,7 +42,12 @@ export default function Contact() {
     return (
         <div className="flex flex-col font-[Quicksand] items-center justify-center min-h-[400px] p-6 rounded-3xl animate-fade-in">
             <div className="w-full max-w-lg border-b-2 border-violet-300 p-8 animate-fade-in-up">
-                <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+                <div className="w-full flex justify-center">
+                    <div className="text-xl text-center block text-violet-200 font-semibold italic">
+                        Need a modern website or app? I can build it from scratch—just reach out!
+                    </div>
+                </div>
+                <form className="flex flex-col gap-6 mt-4" onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-2">
                         <label htmlFor="name" className="text-violet-200 font-semibold">Name</label>
                         <input aria-required id="name" type="text" className="rounded-lg p-2 bg-gradient-to-tr from-black to-violet-700 border border-violet-700 text-white focus:outline-none focus:ring-2 focus:ring-violet-400 transition-all duration-300" placeholder="Your Name" required value={form.name} onChange={handleChange} />

@@ -39,7 +39,7 @@ export default function Experience() {
                     <div className="flex-1 rounded-2xl shadow-xl p-6 border-l-8 border-violet-400 bg-gradient-to-tr from-black to-violet-700 hover:shadow-violet-400/30 hover:scale-[1.02] transition-all duration-300 animate-fade-in-up delay-200">
                         <div className="flex flex-row items-center gap-4 mb-2">
                             <h3 className="text-xl font-bold text-white font-[Quicksand]">Software Development Engineering Intern, Thinkseed Systems</h3>
-                            <span className="ml-auto text-violet-200 text-sm font-semibold">2023 Jun – 2023 Dec • Bangalore, India</span>
+                            <span className="ml-auto text-violet-200 text-sm font-semibold">2023 Jun – 2023 Dec • BLR, India</span>
                         </div>
                         <ul className="list-disc ml-6 text-violet-100 space-y-2 mt-2">
                             <li>
