@@ -9,22 +9,59 @@ export default function SidebarProfile() {
         <div className="text-white">
             <div className="flex flex-col items-center justify-between mb-4 mt-1">
                 {/* upper sidebar */}
-                <div className="border-b-[0.5px] border-b-white flex flex-col gap-3 w-full h-auto">
-                    <div className="grid grid-cols-[40%_60%] gap-6">
-                        <div className="border-[0.5px] border-white md:w-20 md:h-20 w-20 h-20 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex items-center justify-center shadow-lg">
-                            <Image src="/TauheedPhoto.jpg" alt="Tauheed's Avatar" className="rounded-full w-full h-full object-cover" width={80} height={80} />
+                <div className="border-b border-white/50 w-full py-4 px-2 flex flex-col gap-3">
+                    {/* Profile Row */}
+                    <div className="flex items-start gap-3 w-full">
+                        {/* Avatar - Responsive sizing */}
+                        <div className="border border-white/50 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-violet-500 to-blue-900 flex-shrink-0 overflow-hidden shadow-lg">
+                            <Image
+                                src="/TauheedPhoto.jpg"
+                                alt="Tauheed's Avatar"
+                                width={80}
+                                height={80}
+                                className="w-full h-full object-cover"
+                                priority
+                            />
                         </div>
-                        <div>
-                            <h2 className="font-[Quicksand] font-bold text-xl">Tauheed Darekar</h2>
-                            <h2 className="font-[Quicksand] font-bold text-xl">توحید</h2>
+
+                        {/* Name Section - Now with text overflow handling */}
+                        <div className="flex-grow min-w-0 space-y-1">
+                            <h2 className="font-[Quicksand] font-bold text-lg sm:text-xl truncate">
+                                Tauheed
+                            </h2>
+                            <h2 className="font-[Quicksand] font-bold text-lg sm:text-xl truncate">
+                                توحید
+                            </h2>
                         </div>
                     </div>
-                  
-                    <div className="flex justify-center flex-col">
-                        <strong className="font-[Quicksand] w-full text-xl text-center">Fullstack Developer</strong>
-                            <h2 className="font-[Quicksand] font-extrabold text-center text-2xl">السلام علیکم</h2>
-                        <a href="/Tauheed_Resume.pdf" download className="bg-gradient-to-tr from-black to-violet-700 whitespace-nowrap cursor-pointer mb-3 w-full h-auto p-2 font-[Open_Sans] text-white rounded-full transition duration-300 hover:bg-violet-800 flex items-center justify-center">
-                            Download Resume <DownloadIcon className="inline ml-2 h-5 animate-bounce mt-2" />
+
+                    {/* Bottom Section */}
+                    <div className="flex flex-col items-center gap-2 w-full px-1">
+                        <strong className="font-[Quicksand] text-lg sm:text-xl text-center w-full truncate">
+                            Fullstack Developer
+                        </strong>
+                        <h2 className="font-[Quicksand] font-extrabold text-xl sm:text-2xl text-center w-full">
+                            السلام علیکم
+                        </h2>
+
+                        {/* Download Button */}
+                        <a
+                            href="/Tauheed_Resume.pdf"
+                            download
+                            className="
+        bg-gradient-to-tr from-black to-violet-700 
+        text-white font-[Open_Sans] text-sm sm:text-base
+        rounded-full 
+        w-full max-w-xs
+        py-2 px-4
+        flex items-center justify-center
+        transition-all duration-300 
+        hover:bg-violet-800
+        mt-2
+      "
+                        >
+                            Download Resume
+                            <DownloadIcon className="ml-2 h-4 sm:h-5 animate-bounce" />
                         </a>
                     </div>
                 </div>
