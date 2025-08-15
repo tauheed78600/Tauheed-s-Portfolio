@@ -22,7 +22,7 @@ export default function SidebarProfile() {
                                 className="w-full h-full object-cover"
                                 priority
                             />
-                        </div>
+                        </div> 
 
                         {/* Name Section - Now with text overflow handling */}
                         <div className="flex-grow min-w-0 space-y-1">
