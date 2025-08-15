@@ -1,5 +1,5 @@
 "use client"
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import React from 'react';
 import { DownloadIcon } from "lucide-react";
 import Image from "next/image";
