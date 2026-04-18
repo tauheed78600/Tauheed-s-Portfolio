@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { SiMongodb, SiMysql, SiNestjs, SiNodedotjs, SiReact, SiSpring, SiGit, SiHtml5 } from 'react-icons/si';
+import { SiMongodb, SiMysql, SiNestjs, SiNodedotjs, SiReact, SiSpring, SiGit, SiHtml5, SiAntdesign, SiExpress, SiJest } from 'react-icons/si';
 
 export default function DevelopmentSkills() {
     const [activeTab, setActiveTab] = React.useState('frontend');
@@ -15,15 +15,17 @@ export default function DevelopmentSkills() {
                 { name: "BootStrap", icon: <span className="text-2xl font-bold text-purple-700">B</span> },
                 { name: "Tailwind CSS", icon: <span className="text-2xl font-bold text-violet-400">T</span> },
                 { name: "Schadcn UI", icon: <span className="text-2xl font-bold text-gray-400">S</span> },
+                { name: "Ant Design", icon: <SiAntdesign size={40} color="#0170FE" /> },
             ],
         },
         {
             label: 'Backend',
             key: 'backend',
             skills: [
-                { name: "Spring Boot", icon: <SiSpring size={40} color="#6DB33F" /> },
                 { name: "Node.js", icon: <SiNodedotjs size={40} color="#3C873A" /> },
                 { name: "NestJS", icon: <SiNestjs size={40} color="#E0234E" /> },
+                { name: "Spring Boot", icon: <SiSpring size={40} color="#6DB33F" /> },
+                { name: "ExpressJs", icon: <SiExpress size={40} color="#6DB33F" /> },
                 { name: "RESTful APIs", icon: <span className="text-2xl font-bold text-blue-500">API</span> },
                 { name: "Agile/Scrum", icon: <span className="text-2xl font-bold text-green-700">A/S</span> },
                 { name: "MVC", icon: <span className="text-2xl font-bold text-indigo-700">MVC</span> },
@@ -63,8 +65,8 @@ export default function DevelopmentSkills() {
             label: 'Dev Environment',
             key: 'env',
             skills: [
-                { name: "Spring Tool Suite", icon: <span className="text-2xl font-bold text-green-700">STS</span> },
                 { name: "Visual Studio", icon: <span className="text-2xl font-bold text-blue-700">VS</span> },
+                { name: "Spring Tool Suite", icon: <span className="text-2xl font-bold text-green-700">STS</span> },
                 { name: "Android Studio", icon: <span className="text-2xl font-bold text-green-500">AS</span> },
                 { name: "PyCharm", icon: <span className="text-2xl font-bold text-green-900">PC</span> },
             ],
@@ -73,6 +75,7 @@ export default function DevelopmentSkills() {
             label: 'Testing',
             key: 'testing',
             skills: [
+                { name: "Jest", icon: <SiJest size={40} color="#C21325" /> },
                 { name: "JUnit", icon: <span className="text-2xl font-bold text-red-700">J</span> },
                 { name: "Integration Testing", icon: <span className="text-2xl font-bold text-blue-700">IT</span> },
             ],

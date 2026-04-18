@@ -22,7 +22,7 @@ export default function SidebarProfile() {
                                 className="w-full h-full object-cover"
                                 priority
                             />
-                        </div> 
+                        </div>
 
                         {/* Name Section - Now with text overflow handling */}
                         <div className="flex-grow min-w-0 space-y-1">
@@ -46,8 +46,8 @@ export default function SidebarProfile() {
 
                         {/* Download Button */}
                         <a
-                            href="/Tauheed_Resume.pdf"
-                            download
+                            href="/TauheedResume04.pdf"
+                            download="TauheedResume04.pdf"
                             className="
         bg-gradient-to-tr from-black to-violet-700 
         text-white font-[Open_Sans] text-sm sm:text-base
@@ -81,7 +81,7 @@ export default function SidebarProfile() {
                     </div>
                     <div className="w-full bg-gradient-to-tr from-black to-violet-700 rounded-lg p-3 flex flex-col items-center">
                         <span className="font-[Open_Sans] text-violet-100 text-sm mb-1">Age</span>
-                        <span className="font-[Quicksand] text-white font-medium">24 years old</span>
+                        <span className="font-[Quicksand] text-white font-medium">25 years</span>
                     </div>
                     <div className="w-full bg-gradient-to-tr from-black to-violet-700 rounded-lg p-3 flex flex-col items-center">
                         <span className="font-[Open_Sans] text-violet-100 text-sm mb-1">Location</span>

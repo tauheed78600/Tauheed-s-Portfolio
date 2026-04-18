@@ -13,20 +13,33 @@ export default function Experience() {
                     </div>
                     <div className="flex-1 rounded-2xl shadow-xl mb-12 p-6 border-l-8 border-violet-400 bg-gradient-to-tr from-black to-violet-700 hover:shadow-violet-400/30 hover:scale-[1.02] transition-all duration-300 animate-fade-in-up delay-200">
                         <div className="flex flex-row items-center gap-4 mb-2">
-                            <h3 className="text-xl font-bold text-white font-[Quicksand]">Full Stack Developer, Lumega Labs</h3>
-                            <span className="ml-auto text-violet-200 text-sm font-semibold">2025 July – Present • Noida, India</span>
+                            <h3 className="text-xl font-bold text-white font-[Quicksand]">Full Stack Developer, Successive Digital</h3>
+                            <span className="ml-auto text-violet-200 text-sm font-semibold">2025 September – Present • Pune, India</span>
                         </div>
-                        <ul className="list-disc ml-6 text-violet-100 space-y-2 mt-2">
-                            <li>
-                                <span className="font-semibold text-violet-300">Backend Development::</span> Built scalable REST APIs in Node.js for real-time feature-performance reporting and optimized PostgreSQL queries and integrated NoSQL for dynamic data storage.
-                            </li>
-                            <li>
-                                <span className="font-semibold text-violet-300">Frontend Development:</span> Developed interactive analytics dashboards in React.js with Chart.js visualizations.
-                            </li>
-                            <li>
-                                <span className="font-semibold text-violet-300">Cloud & Deployment:</span> Deployed serverless functions using AWS Lambda and SAM for cost-efficient backend operations.
-                            </li>
-                        </ul>
+                        <div className="space-y-4 mt-2">
+                            <div>
+                                <span className="font-semibold text-violet-300 text-lg">Backend Development</span>
+                                <ul className="list-disc ml-8 text-violet-100 space-y-1 mt-1">
+                                    <li>Led and developed a full stack feature used by <span className="text-violet-300 font-bold">1,000+</span> users, streamlining workflow efficiency.</li>
+                                    <li>Resolved multi-lingual sorting issues using database collation and indexing, ensuring correct ordering across languages.</li>
+                                    <li>Reduced API response time by <span className="text-violet-300 font-bold">40%</span> by optimizing queries and adding database indexing.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span className="font-semibold text-violet-300 text-lg">Frontend Development</span>
+                                <ul className="list-disc ml-8 text-violet-100 space-y-1 mt-1">
+                                    <li>Reduced frontend load time by <span className="text-violet-300 font-bold">30%</span> by eliminating redundant API calls and reusing shared components.</li>
+                                    <li>Enhanced UI/UX for course management modules, improving user engagement and accessibility.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span className="font-semibold text-violet-300 text-lg">Cloud & Deployment</span>
+                                <ul className="list-disc ml-8 text-violet-100 space-y-1 mt-1">
+                                    <li>Automated CI/CD pipelines for seamless deployment and faster release cycles.</li>
+                                    <li>Implemented monitoring and alerting for cloud resources to ensure high availability.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="relative flex items-start w-full mb-12 group animate-slide-left">

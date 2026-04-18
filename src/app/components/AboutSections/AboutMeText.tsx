@@ -10,7 +10,7 @@ export default function AboutMeText() {
         <div className="font-[Quicksand]">
             <p>
                 Hi! I&rsquo;m <strong>Tauheed Darekar</strong>. I have completed my Master&rsquo;s in <strong>Computer Science and Engineering</strong> from NIT Goa (2024) and earned my Bachelor&rsquo;s degree in the same field from Trinity Academy of Engineering, Pune (2022).
-                <br />I&rsquo;m currently working as a <strong>Fullstack Developer</strong> at Parkar Digital, where I contribute to the design and development of scalable web applications using modern tech stacks.
+                <br />I&rsquo;m currently working as a <strong>Fullstack Developer</strong> at Successive Digital, where I contribute to the design and development of scalable web applications using modern tech stacks.
                 <br />I specialize in full-stack development with hands-on experience in the <strong>MERN stack (MongoDB, Express.js, React.js, Node.js), Next.js, NestJS, and TypeScript.</strong>
             </p>
 
@@ -32,7 +32,7 @@ export default function AboutMeText() {
             {showMore && (
                 <>
                     <p>
-                        During my time at Parkar, I&rsquo;ve worked on building robust backend services, integrating third-party APIs, managing authentication systems, and deploying applications using CI/CD pipelines. I also have experience working with cloud platforms like Azure and tools like Azure Devops, CI/CD Pipelines and Git for efficient development workflows.<br />
+                        During my time at Successive Digital and Parkar Digital, I&rsquo;ve worked on building robust backend services, integrating third-party APIs, managing authentication systems, and deploying applications using CI/CD pipelines. I also have experience working with cloud platforms like Azure and tools like Azure Devops, CI/CD Pipelines and Git for efficient development workflows.<br />
                         Previously, I worked as a Backend Development Intern at Thinkseed Systems in Bangalore, where I was involved in developing RESTful services using Java and the Spring Boot framework. This experience gave me a strong foundation in enterprise-level backend systems and Java-based architecture.
                         <br />Beyond work, I enjoy learning new technologies, contributing to side projects, and solving data structure and algorithm problems on platforms like LeetCode and GeeksforGeeks. I&rsquo;m also active on GitHub where I regularly push code and share projects.
                     </p>

@@ -26,6 +26,16 @@ export default function Languages() {
                             </li>
                             <li className="flex flex-col gap-1 group transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center gap-3">
+                                    <TbBrandCSharp className="text-purple-400 text-xl group-hover:animate-bounce" />
+                                    <span className="text-white font-semibold">TypeScript</span>
+                                </div>
+                                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
+                                    <div className="h-full bg-violet-300 transition-all duration-500 rounded-full" style={{ width: "85%" }} />
+                                </div>
+                                <span className="text-xs text-white-200 font-semibold ml-auto">85%</span>
+                            </li>
+                            <li className="flex flex-col gap-1 group transition-all duration-300 hover:scale-105">
+                                <div className="flex items-center gap-3">
                                     <FaJava className="text-orange-400 text-xl group-hover:animate-bounce" />
                                     <span className="text-white font-semibold">Java</span>
                                 </div>
@@ -48,16 +58,6 @@ export default function Languages() {
                                 <div className="flex items-center gap-3">
                                     <FaCuttlefish className="text-blue-300 text-xl group-hover:animate-bounce" />
                                     <span className="text-white font-semibold">C</span>
-                                </div>
-                                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-                                    <div className="h-full bg-violet-300 transition-all duration-500 rounded-full" style={{ width: "80%" }} />
-                                </div>
-                                <span className="text-xs text-white-200 font-semibold ml-auto">80%</span>
-                            </li>
-                            <li className="flex flex-col gap-1 group transition-all duration-300 hover:scale-105">
-                                <div className="flex items-center gap-3">
-                                    <TbBrandCSharp className="text-purple-400 text-xl group-hover:animate-bounce" />
-                                    <span className="text-white font-semibold">TypeScript</span>
                                 </div>
                                 <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
                                     <div className="h-full bg-violet-300 transition-all duration-500 rounded-full" style={{ width: "80%" }} />
